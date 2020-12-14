@@ -2,7 +2,6 @@
 apt:
   all_update_flag: True
   all_upgrade_flag: True
-  force_apt_get: True
   packages:
     - name: vim
-    - name: wget
+    - name: curl
