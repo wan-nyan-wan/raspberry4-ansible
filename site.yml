@@ -1,5 +1,11 @@
-- hosts: raspberry-pi
+- name: "Docker playbook"
+  hosts: localhost
+# hosts: raspberry-pi
+  vars:
+    docker_install_compose: true
+    docker_users:
+      - pi
   roles:
     - apt
     - sys
-    - wordpress
+    - geerlingguy.docker_arm
